@@ -32,3 +32,40 @@ h1 {
     padding: 20px;
     color: #f0a500;
 }
+
+nav {
+    background-color: #1a1a2e;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+#auth-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    gap: 15px;
+}
+#loginBtn , #logoutBtn {
+    background-color: #f0a500;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#loginBtn:hover, #logoutBtn:hover {
+    background-color: #ffffff;
+}
+#userInfo {
+    color: #ffffff;
+    font-size: 14px;
+}
