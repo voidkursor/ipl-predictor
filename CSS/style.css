@@ -132,3 +132,131 @@ nav {
 .predict-btn:hover:not(:disabled) {
     background-color: #ffffff;
 }
+
+
+#predict-container{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+#match-info{
+    background-color: #1a1a2e;
+    border: 1px solid #f0a500;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#match-info h2 {
+    color:#f0a500;
+    margin-bottom: 10px;
+}
+#match-info p{
+    color: #aaaaaa;
+    font-size: 14px;
+}
+#prediction-form{
+    background-color: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group h3{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.radio-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.radio-label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.radio-label:hover{
+    border-color: #f0a500;
+}
+
+#mom-input{
+    width: 100%;
+    padding: 10px;
+    background-color: #0a0a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+#mom-input:focus{
+    outline: none;
+    border-color: #f0a500;
+}
+#submitBtn{
+    background-color: #f0a500;
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+#submitBtn:disabled{
+    background-color: #444;
+    color: #888;
+    cursor: not-allowed;
+}
+#form-message{
+    color: #f0a500;
+    text-align: center;
+    font-size: 14px;
+}
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.player-card{
+    background-color: #0a0a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+.player-card:hover{
+    border-color: #f0a500;
+}
+.player-card.selected{
+    border-color: #f0a500;
+    background-color: #1a1a2e;
+}
+.player-team-tag{
+    font-size: 11px;
+    color: #f0a500;
+    font-weight: bold;
+}
+.player-name{
+    font-size: 13px;
+    color: #ffffff;
+}
+.selected-player{
+    color: #f0a500;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
